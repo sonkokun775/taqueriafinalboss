@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e24; /* Color oscuro como tus juegos */
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: #ff9f1c; /* Naranja fuego */
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Esto también te separa los productos automáticamente con un espacio limpio */
+}
+
+.producto {
+    border: 2px solid #ff9f1c;
+    box-shadow: 0 0 15px #ff9f1c; /* Brillo de fuego neón */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.img-producto {
+    width: 100%;          /* Se adapta al ancho de la caja neón */
+    height: 150px;        /* Altura fija para que todas las fotos queden alineadas */
+    object-fit: cover;    /* Recorta la foto de forma inteligente para que no se vea estirada o fea */
+    border-radius: 8px;   /* Bordes redondeados para que combine con tu diseño */
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff9f1c;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffbf69; /* Cambia de color al pasar el mouse */
+}
+
+.carrito {
+    background-color: #3d3a4e;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+/* --- DISEÑO DEL HEADER --- */
+header {
+    background-color: #2b2d42;
+    padding: 20px 10px;
+    border-bottom: 3px solid #ff9f1c; /* Línea de fuego neón abajo */
+    margin-bottom: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.tagline {
+    color: #ffbf69;
+    margin: 5px 0 0 0;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* --- OPTIMIZACIÓN DE LA LISTA DEL CARRITO (Para que no se haga larga) --- */
+#lista-carrito {
+    max-height: 180px;      /* Altura máxima para que la caja morada no se estire */
+    overflow-y: auto;       /* Si se pasa de la altura, activa la barrita de scroll sola */
+    padding-left: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ff9f1c; /* Línea divisoria interna */
+}
+
+#lista-carrito li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ffbf69;
+}
+
+.total-texto {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* --- DISEÑO DEL FOOTER --- */
+footer {
+    background-color: #151518;
+    color: #a0a0a5;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 50px;
+    border-top: 3px solid #ff9f1c;
+    font-size: 13px;
+    border-radius: 15px 15px 0 0;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+.creditos {
+    color: #ff9f1c;
+    font-weight: bold;
+    margin-top: 15px !important;
+}
+
+/* --- DISEÑO ADAPTABLE PARA CELULARES (Pantallas menores a 768px) --- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reducimos el margen exterior para aprovechar espacio */
+    }
+
+    main {
+        flex-direction: column; /* Cambia de horizontal a vertical: el menú arriba y el carrito abajo */
+        gap: 30px; /* Espacio de separación entre el menú y el carrito */
+        margin-top: 20px;
+    }
+
+    .menu {
+        width: 100%; /* El contenedor del menú usa todo el ancho del celular */
+    }
+
+    .producto {
+        padding: 15px; /* Ajustamos un poco el espacio interno del producto */
+        margin-bottom: 10px;
+    }
+
+    .carrito {
+        width: 100%; /* El carrito ocupa todo el ancho abajo */
+        min-width: unset; /* Quitamos el ancho mínimo que tenías para que no se desborde */
+        box-sizing: border-box; /* Asegura que el padding no estire la caja fuera de la pantalla */
+    }
+    
+    button {
+        width: 100%; /* Hace que los botones sean grandes y fáciles de presionar con el pulgar */
+        padding: 12px; /* Un poco más alto para mejor experiencia táctil */
+    }
+}

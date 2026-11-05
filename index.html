@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquería El Final Boss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/taqueria-final-boss.png">
+</head>
+<body>
+
+    <!-- 🔝 HEADER: El encabezado con el título del local -->
+    <header>
+        <div class="header-container">
+            <h1>🌮 Taquería "El Final Boss"</h1>
+            <p class="tagline">El verdadero Endgame del sabor</p>
+        </div>
+    </header>
+
+    <!-- 🎮 MAIN: Tu menú y carrito con las 4 cajas bien optimizadas -->
+    <main>
+        <section class="menu">
+            <h2>Nuestro Menú</h2>
+            
+            <div class="producto">
+                <img src="img/orden de trompo.jpeg" alt="Tacos de Trompo" class="img-producto">
+                <h3>Tacos de Trompo</h3>
+                <p>Precio: $<strong>80</strong> MXN</p>
+                <button class="btn-agregar" data-nombre="Tacos de Trompo" data-precio="80">Agregar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/hamburguesa.jpg" alt="Hamburguesa" class="img-producto">
+                <h3>Hamburguesa</h3>
+                <p>Precio: $<strong>128</strong> MXN</p>
+                <button class="btn-agregar" data-nombre="Hamburguesa" data-precio="128">Agregar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/burrito.jpg" alt="burrito" class="img-producto">
+                <h3>Burrito</h3>
+                <p>Precio: $<strong>100</strong> MXN</p>
+                <button class="btn-agregar" data-nombre="Burrito" data-precio="100">Agregar</button>
+            </div>
+
+        <section class="carrito">
+            <h2>🛒 Tu Pedido</h2>
+            <ul id="lista-carrito">
+                <!-- Los productos se inyectan más cortos mediante JS -->
+            </ul>
+            <p class="total-texto">Total a Pagar: $ <span id="total">0</span> MXN</p>
+            <button id="btn-pagar">Enviar por WhatsApp</button>
+        </section>
+    </main>
+
+    <!-- 👣 FOOTER: Información del dueño con datos protegidos para GitHub -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2026 Taquería El Final Boss. Todos los derechos reservados.</p>
+            <p>📍 Ubicación: ######</p>
+            <p>📞 Pedidos telefónicos: 81-0000-0000 (Falso para privacidad)</p>
+            <p class="creditos">Desarrollado por None</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
