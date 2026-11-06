@@ -114,6 +114,7 @@ botonPagar.addEventListener('click', () => {
     mensajeWhatsApp += `• *Cliente:* ${nombre}\n`;
     mensajeWhatsApp += `• *Dirección:* ${direccion}\n`;
     mensajeWhatsApp += `• *Método de pago:* Efectivo (${pagoCon})\n\n`;
+    mensajeWhatsApp += `• _*Nota:* Costo de envío sujeto a la zona del local_\n\n`; // <--- Nota agregada
     
     mensajeWhatsApp += `💰 *TOTAL A PAGAR:* *$${totalAcumulado} MXN*`;
 
