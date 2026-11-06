@@ -48,10 +48,39 @@
             <ul id="lista-carrito">
                 <!-- Los productos se inyectan más cortos mediante JS -->
             </ul>
+        </section>
+
+                <!-- Se cerró correctamente la sección de menú que faltaba -->
+        </section>
+
+        <section class="carrito">
+            <ul id="lista-carrito">
+                <!-- Los productos se inyectan mediante JS -->
+            </ul>
+
+            <!-- 📋 NUEVO: Formulario de Datos para automatizar el mensaje -->
+            <div class="formulario-entrega">
+                <h3>Datos de Entrega</h3>
+                <div class="input-group">
+                    <label for="nombre-cliente">👤 Tu Nombre:</label>
+                    <input type="text" id="nombre-cliente" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="input-group">
+                    <label for="direccion-cliente">📍 Dirección completa:</label>
+                    <input type="text" id="direccion-cliente" placeholder="Calle, Número y Colonia" required>
+                </div>
+                <div class="input-group">
+                    <label for="pago-cliente">💵 ¿Con cuánto pagas?:</label>
+                    <input type="text" id="pago-cliente" placeholder="Ej. Efectivo o Transferencia">
+                </div>
+            </div>
+
             <p class="total-texto">Total a Pagar: $ <span id="total">0</span> MXN</p>
             <button id="btn-pagar">Enviar por WhatsApp</button>
         </section>
+
     </main>
+
 
     <!-- 👣 FOOTER: Información del dueño con datos protegidos para GitHub -->
     <footer>
